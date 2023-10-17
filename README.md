@@ -33,6 +33,8 @@ $ python app.py
 - Javascript
 
 # Screenshots or Demo
+1. [Flow chart](./my_personal_portfolio_flow_chart.png)
+2. [Low fidelity design](./my_personal_portfolio_low_fidelity_design.png)
 
 # Roadmap and future enhancements
 
