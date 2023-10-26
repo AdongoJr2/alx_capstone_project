@@ -9,13 +9,13 @@ body {
 
 @media all and (max-width: 480px) {
   body {
-    margin: 8px;
+    margin: 0 8px;
   }
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
   body {
-    margin: 48px;
+    margin: 0 48px;
   }
 }
 
@@ -23,11 +23,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
-/* .nav>.my-portfolio {
-  
-} */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 75%;
+  z-index: 1;
+}
+
+@media all and (max-width: 480px) {
+  .nav, .sticky {
+    width: 95%;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .nav, .sticky {
+    width: 88%;
+  }
+}
+
+.sticky + .main {
+  padding-top: 60px;
+}
 
 .nav>.nav-links {
   list-style: none;
