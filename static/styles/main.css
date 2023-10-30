@@ -13,6 +13,12 @@ a {
   color: unset;
 }
 
+input,
+textarea {
+  border: 0.8px solid rgb(203, 213, 225);
+  border-radius: 4px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -52,7 +58,8 @@ a {
 }
 
 .nav .my-portfolio {
-  color: whitesmoke;;
+  color: whitesmoke;
+  ;
 }
 
 .nav>.nav-links a {
@@ -237,13 +244,32 @@ a {
 }
 
 form.contact-form {
-  border: 1px solid black;
+  border: 0.8px solid rgb(156, 148, 148);
+  border-radius: 6px;
   padding: 12px;
 }
 
 form.contact-form label input,
 form.contact-form label textarea {
   width: 100%;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+form.contact-form .submit-btn {
+  color: white;
+  background-color: green;
+  border-width: 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.my-skills, .projects, .contact-me {
+  margin-top: 36px;
 }
 
 footer {
