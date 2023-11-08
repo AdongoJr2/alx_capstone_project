@@ -17,6 +17,14 @@ a {
   color: unset;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 input,
 textarea {
   border: 0.8px solid rgb(203, 213, 225);
@@ -68,6 +76,22 @@ textarea {
 
 .nav>.nav-links a {
   color: whitesmoke;
+}
+
+.alert-error {
+  padding: 20px;
+  margin: 5px;
+  color: #970020;
+  background-color: #ffd5de;
+  border-radius: 8px;
+}
+
+.alert-info {
+  padding: 20px;
+  margin: 5px;
+  color: #034f25;
+  background-color: #78d28c;
+  border-radius: 8px;
 }
 
 .main {
@@ -272,7 +296,9 @@ form.contact-form .submit-btn {
   cursor: pointer;
 }
 
-.my-skills, .projects, .contact-me {
+.my-skills,
+.projects,
+.contact-me {
   margin-top: 36px;
 }
 

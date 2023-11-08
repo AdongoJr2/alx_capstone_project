@@ -42,6 +42,16 @@
     </nav>
 
     <main class="main">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <ul>
+          {% for category, message in messages %}
+            <li class="{{ 'alert-' + category }}">{{ message }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
       <!-- about me -->
       <section class="about-me" id="about-me">
         <div class="my-pic">
@@ -161,23 +171,33 @@
       <!-- contact section -->
       <section class="contact-me" id="contact-me">
         <h2 class="section-header">Contact Me</h2>
-        <form class="contact-form">
+        <form class="contact-form" method="post" action="/">
           <h3>Contact Form</h3>
           <hr />
 
           <label class="name-label">
             <span>Your Name</span>
             <br />
-            <input type="text" name="name" id="name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value="{{ request.form['name'] }}"
+            />
           </label>
 
           <br />
           <br />
-          
+
           <label class="email-label">
             <span>Your Email Address</span>
             <br />
-            <input type="email" name="email" id="email" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              value="{{ request.form['email'] }}"
+            />
           </label>
 
           <br />
@@ -186,14 +206,20 @@
           <label class="message-label">
             <span>Message</span>
             <br />
-            <textarea name="message" id="message" rows="10"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              value="{{ request.form['message'] }}"
+            >
+            </textarea>
           </label>
 
           <br />
           <br />
 
           <div class="action">
-            <button class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Submit</button>
           </div>
         </form>
       </section>
