@@ -19,6 +19,9 @@ $ pip install -r requirements.txt
 ```
 - Create a `.env` file at the root directory of the project and fill t with the contents below. (NB. Remember to replace the values in square brackets with your own values. A sample can be found in [.env.example](.env.example) file)
 ```bash
+MAIL_USERNAME=[your-email@gmail.com]
+MAIL_PASSWORD=[you-gmail-app-secure-password]
+FLASH_SECRET_KEY=[your-secret-key]
 ```
 ## Running the Application
 ```bash
@@ -27,7 +30,6 @@ $ python app.py
 
 # Technologies Used
 - Flask (Python with Virtualenv)
-- MySQL
 - HTML
 - CSS
 - Javascript
