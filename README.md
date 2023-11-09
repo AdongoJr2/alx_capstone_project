@@ -9,15 +9,16 @@ This is a web app for my Personal Portfolio Website.
 - Contact Information
 
 ## Installation
-- Run the command below in the projet's directory to activate the project's virtueal environment (virtualenv)
+- Clone the project to your machine
+- Run the command below in the project's root directory to activate the project's virtual environment (virtualenv)
 ```bash
 $ source ./venv/bin/activate
 ```
-- Run the following command to install the Pyhton packages used in this project 
+- Run the following command to install the Python packages used in this project 
 ```bash
 $ pip install -r requirements.txt
 ```
-- Create a `.env` file at the root directory of the project and fill t with the contents below. (NB. Remember to replace the values in square brackets with your own values. A sample can be found in [.env.example](.env.example) file)
+- Create a `.env` file at the root directory of the project and fill it with the contents below. (NB. Remember to replace the values in square brackets with your own values. A sample can be found in [.env.example](.env.example) file)
 ```bash
 MAIL_USERNAME=[your-email@gmail.com]
 MAIL_PASSWORD=[you-gmail-app-secure-password]
@@ -29,7 +30,7 @@ $ python app.py
 ```
 
 # Technologies Used
-- Flask (Python with Virtualenv)
+- Flask (Python3 with Virtualenv)
 - HTML
 - CSS
 - Javascript
@@ -39,6 +40,9 @@ $ python app.py
 2. [Low fidelity design](./my_personal_portfolio_low_fidelity_design.png)
 
 # Roadmap and future enhancements
+- Adding loader to the button when submitting contact information and message
+- Enabling scrolling to exact position when the navigation link are clicked
+- Adding my custom log in the top navigation bar instead of the name initials 
 
 # Contact information
 - GitHub - <a href="https://github.com/AdongoJr2" target="_blank">AdongoJr2</a>
