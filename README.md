@@ -45,4 +45,6 @@ $ python app.py
 - Adding my custom log in the top navigation bar instead of the name initials 
 
 # Contact information
-- GitHub - <a href="https://github.com/AdongoJr2" target="_blank">AdongoJr2</a>
+- <a href="https://github.com/AdongoJr2" target="_blank">GitHub</a>
+- <a href="https://linkedin.com/in/moses-adongo-754b201b8" target="_blank">LinkedIn</a>
+- <a href="https://twitter.com/mosesadongo23" target="_blank">Twitter</a>
